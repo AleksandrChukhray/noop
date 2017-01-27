@@ -1,0 +1,1489 @@
+/*--------------------variables---------------*/
+$fontDefault: Arial, sans-serif
+$fontSans : 'Open Sans', sans-serif
+$fontArvo : 'Arvo', serif
+$fontColor: #34373b
+/*--------------------mixin--------------------*/
+@mixin border-radius($a:3px)
+	-webkit-border-radius: $a
+	-moz-border-radius: $a
+	-ms-border-radius: $a
+	-o-border-radius: $a
+	border-radius: $a
+@mixin trans($a: all,$b: .3s,$c:ease)
+	transition: $a $b $c
+/*--------------------reset style--------------*/
+*
+	box-sizing: border-box
+html,
+body
+	height: 100%
+	width: 100%
+	overflow: auto
+	background-color: #F7FBFC
+	font: 16px/19px $fontSans
+	-ms-text-size-adjust: 100% /* 2 */
+	-webkit-text-size-adjust: 100%  /* 2 */
+ul,
+ol
+	margin: 0
+	padding: 0
+	list-style: none
+a, 
+a:link,
+a:visited,
+a:hover,
+a:active
+	display: block
+	text-decoration: none
+	border: none
+	outline: none
+/*-----------------typography---------------------*/
+/*h4*/
+.paragr-bold
+	font: bold 13px/1.7 $fontSans
+	color: #262626
+.paragr-def
+	font: normal 13px/1.7 $fontSans
+	color: #262626
+.paragr-italic
+	font: italic 13px/1.7 $fontSans
+	color: #262626
+.h1
+	line-height: 45px
+	font-family: $fontArvo
+	font-size: 36px
+	color: $fontColor
+.h2
+	font-size: 24px
+	line-height: 33px 
+	font-family: $fontSans
+	color: $fontColor
+.h3
+	font-size: 24px
+	line-height: 33px
+	font-family: $fontSans
+	color: $fontColor	
+/*--------------------service----------------------*/
+.clearfix:after,
+.clearfix:before
+	content: ''
+	display: table
+	clear: both
+.b-link
+	outline: none
+	text-decoration: none
+	color: #000
+	&:link, &:visited,&:hover,&:active
+		outline: none
+		text-decoration: none
+.pixel-perfect,
+.pixel-perfect_2,
+.pixel-perfect_3,
+.pixel-perfect_4
+	position: absolute
+	width: 1280px
+	height: 3000px
+	margin: 0 auto
+	left: 0
+	right: 0
+	top: 0
+	opacity: 0.5
+	margin-top: 0px
+	z-index: 0
+.navbar-toggle
+	margin-right: 0
+	.icon-bar
+		background-color: #34373b
+		height: 3px
+.b-btn
+	+border-radius(100px)
+	text-align: center
+	vertical-align: middle
+	text-transform: uppercase
+	color: #fff !important
+	display: block
+	border: none
+	outline: none
+	+trans
+.b-btn--blue
+	background-color: #2f96cc
+	&:hover
+		border: none
+		box-shadow: 0 4px 4px 0 rgba(46, 150, 204, 0.3)
+	&:active
+		background-color: #1c80b4
+		box-shadow: none		
+.b-btn--red
+	background-color: #fe5a27
+	&:hover
+		border: none
+		box-shadow: 0 4px 4px 0 rgba(254, 90, 39, 0.3)
+	&:active
+		background-color: #e74c1c
+		box-shadow: none
+.b-btn--small
+	width: 138px
+	height: 33px
+	font: bold 13px/33px $fontSans !important
+.b-btn--normal
+	width: 138px
+	height: 46px
+	font: bold 13px/46px $fontSans !important
+.b-btn--lg
+	width: 260px
+	height: 46px
+	font: bold 13px/46px $fontSans !important
+.b-btn--lm
+	width: 174px
+	height: 46px
+	font: bold 13px/46px $fontSans !important
+.b-link
+	font: normal 16px/16px $fontSans
+	color: #2f96cc !important
+	display: inline-block !important
+	&:hover
+		text-decoration: underline
+	&:active
+		text-decoration: underline
+		color: #fe5a27 !important
+input::-moz-placeholder
+	color: #fff
+	opacity: 1
+input::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+textarea::-moz-placeholder
+	color: #fff
+	opacity: 1
+input::-ms-placeholder
+	color: #fff
+textarea::-ms-placeholder
+	color: #fff
+input[placeholder]
+	text-overflow: ellipsis
+input::-moz-placeholder
+	text-overflow: ellipsis
+input::-moz-placeholder
+	text-overflow: ellipsis
+input::-ms-input-placeholder
+	text-overflow: ellipsis
+input[placeholder]:focus::-webkit-input-placeholder
+	color: transparent
+input[placeholder]:focus::-moz-placeholder
+	color: transparent
+input[placeholder]:focus::-ms-input-placeholder
+	color: transparent
+/*--------------------grid-------------------------*/
+.b-main-wrapper
+	width: 100%
+	min-height: calc(100% - 192px)
+	position: relative
+.container
+	padding: 0
+.footer
+	width: 100%
+	min-height: 192px
+/*------------------header-----------------------*/
+.b-header__home.b-header
+	margin-bottom: -83px
+	background-color: transparent
+	z-index: 9998
+	box-shadow: none
+	.b-nav-link__item--btn
+		display: none
+.b-header
+	position: relative
+	background-color: #fff
+	box-shadow: 0 0 4px 0 #dde2e4
+/*-----------------header topImg-----------------*/	
+.b-topImg
+	min-height: 610px
+	width: 100%
+	background: url(../../img/header-bg.png) top center transparent no-repeat
+	padding-top: 83px
+.b-topImg--article
+	min-height: 350px
+	background: url(../../img/article_top_img_0.png) top center/100% auto rgba(74, 82, 100, 0.1) no-repeat
+/*------------------nav link---------------------*/
+.b-nav-link
+	//overflow: hidden
+	li
+		float: left
+		padding: 6px 10px
+		&:first-child
+			padding: 6px 10px 6px 0
+		&:last-child
+			padding: 6px 0 6px 10px
+		&.active a
+			color: #fe5a27
+	a
+		font: 13px/18px $fontSans
+		color: $fontColor
+		text-transform: capitalize
+		+trans()
+		&:hover
+			color: #2f96cc
+	.b-btn
+		a
+			font: bold 13px/13px $fontSans
+			color: #fff
+	.b-social-link--header
+		.b-social-link__item
+			padding: 6px 4px 6px 0
+			&:first-child
+				padding: 6px 4px 6px 0
+			&:last-child
+				padding-right: 0
+		a
+			font: 17px/18px $fontSans		
+.b-nav-link--top .container:after
+	content: ""
+	display: block
+	border-bottom: solid 1px #2f96cc
+.b-brand-link
+	text-transform: uppercase
+	font: 700 27px/53px $fontDefault
+	color: $fontColor
+.b-nav-link--bottom
+	.b-brand-link
+		text-transform: uppercase
+		font: 700 27px/53px $fontDefault
+		color: $fontColor
+	& ul > .b-nav-link__item
+		border-top: solid 2px transparent 
+		text-transform: uppercase
+		padding: 9px 0
+		margin: 0 10px
+		+trans()
+		&:first-child
+			margin-left: 0
+			a
+				padding: 8px 0
+		&:last-child(2)
+			margin-right: 0
+			a
+				padding: 8px 0
+		&:last-child
+			margin-right: 0		
+		&:hover,&.active
+			border-color: #2f96cc
+			& > a
+				color: #2f96cc
+		& > a
+			font: 700 15px/15px $fontSans
+			padding: 8px 0
+	.b-nav-link__item--btn
+		border: none !important
+		a
+			padding: 0 !important
+
+/*-------------b-text----------------------*/
+.b-header__b-text
+	margin-top: 117px
+.b-text__header
+	font: bold 28px/35px $fontArvo
+	color: $fontColor
+	margin-bottom: 14px
+.b-text__descr
+	font: bold 15px/20px $fontSans
+	color: $fontColor
+	margin-bottom: 26px
+.b-text__b-button
+	a
+		font: bold 13px/46px $fontSans
+		width: 138px
+		color: #fff
+
+/*---------------category-nav------------------*/
+.b-caregory-nav
+	min-height: 610px
+	padding: 40px 0 0 0
+	display: none
+	position: absolute
+	top: 83px
+	left: 0
+	right: 0
+	background-color: #2f96cc
+	z-index: 9998
+.b-list-category
+	-webkit-column-count: 4 /* Chrome, Safari, Opera */
+	-moz-column-count: 4 /* Firefox */
+	column-count: 4 
+	-moz-column-width: 172px /* Firefox */
+	-webkit-column-width: 172px /* Safari and Chrome */
+	column-width: 172px
+	-webkit-column-gap: 132px /* Chrome, Safari, Opera */
+	-moz-column-gap: 132px /* Firefox */
+	column-gap: 132px
+	ul[class^="category"]
+		margin-bottom: 20px
+		li
+			display: block
+			float: none
+			padding: 0
+			border: none
+			&:first-child a,
+			&:first-child span
+				color: #fff
+				font-weight: bold
+				font-size: 15px
+				line-height: 1.4
+			&:first-child span
+				color: #4ab0e5
+			&.active
+				a
+					color: #fff
+					text-decoration: underline	
+		a
+			display: inline-block
+			font: 13px/1.5 $fontSans
+			color: #86d5ff
+			padding: 0 !important
+			text-transform: capitalize
+			+trans()
+			&:hover
+				color: #fff
+			&:active
+				color: #fff
+				text-decoration: underline
+		span
+			display: inline-block
+			font: 13px/1.5 $fontSans
+			color: #4ab0e5
+			padding: 0 !important
+			text-transform: capitalize
+/*------------pagination nav---------*/
+.b-pagination
+	text-align: center
+	margin-bottom: 85px
+	.b-pagination__wrapper
+		display: inline-block
+		overflow: hidden
+	.b-pagination__item 
+		float: left
+		a
+			width: 34px
+			height: 34px
+			border-radius: 4px
+			line-height: 34px
+			font-family: $fontSans
+			font-weight: bold
+			font-size: 16px
+			color: #2f96cc
+			+trans
+			text-align: center
+			&:hover
+				background-color: #2f96cc
+				color: #fff
+	.b-pagination__item--prev,
+	.b-pagination__item--next
+		a
+			width: auto
+			height: auto
+			line-height: 34px
+			font-weight: bold
+			font-family: $fontSans
+			font-size: 16px
+			color: #98c6de 
+			text-transform: uppercase
+			i
+				font-size: 10px
+				vertical-align: 2px
+			&:hover
+				background-color: transparent
+				color: #2f96cc
+			&:active
+				color: #fe5a27
+			&.disable
+				color: #c5cacc
+	.b-pagination__item--prev
+		margin-right: 38px
+	.b-pagination__item--next
+		margin-left: 32px		
+.b-pagination--top
+	text-align: center
+	margin: 20px 0
+	.b-pagination__item--prev,
+	.b-pagination__item--next
+		width: 46px
+		height: 46px
+		border-radius: 100px
+		background-color: #41a9e0
+		text-align: center
+		& > a
+			font: 15px/46px $fontSans
+			color: #86d5ff
+			padding: 0 !important
+			text-align: center
+			i
+				font-size: 20px
+				line-height: 46px
+		&:hover
+			box-shadow: 0 4px 4px 0 #208ac1
+			a
+				color: #fff
+	.b-pagination__item--prev
+		margin-right: 10px
+	.b-pagination__item--next
+		margin-left: 10px
+	.b-pagination__wrapper
+		display: inline-block
+	.b-pagination__item
+		padding: 0 !important
+		float: left
+		border: none !important
+		&.active a
+			color: #fff
+			text-decoration: underline
+		&:hover
+			border: none!important	
+		a
+			display: block
+			padding: 0 8px !important
+			font: bold 13px/46px $fontSans !important
+			color: #86d5ff
+			text-transform: capitalize
+			+trans()
+			&:hover
+				color: #fff
+			&:active
+				color: #fff
+				text-decoration: underline	
+/*------------b-close-----------------*/
+.b-close
+	text-transform: uppercase!important
+	color: #9bdcff !important
+	position: absolute
+	top: 0
+	right: 20px
+	font: bold 15px/15px $fontSans !important
+	color: #86d5ff !important
+	display: block
+	padding: 0 !important
+	padding-right: 12px !important
+	+trans
+	i
+		font-size: 18px
+		padding-left: 2px
+		font-weight: normal
+		+trans
+	&:hover
+		color: #fff !important
+		i
+			color: #fff
+	&:active
+		color: #1271a2 !important
+		i
+			color: #1271a2
+.b-close--search-nav
+	color: #a6b8c9 !important
+	+trans
+	&:hover
+		color: #86d5ff !important
+		i
+			color: #86d5ff !important
+	&:active
+		color: #1271a2 !important
+		i
+			color: #1271a2 !important
+.b-close--book
+	z-index: 9999
+	border: none
+	outline: none
+	top: -35px
+	right: -23px
+	background-color: transparent
+	font: bold 13px/18px $fontSans !important
+	color: #868d9a !important
+	i
+		line-height: 18px
+		font-weight: normal
+		font-size: 14px
+		color: #868d9a
+		padding-left: 2px
+	&:after,
+	&:before
+		content: none
+/*------------search------------------*/
+.b-search
+	width: 219px
+	height: 46px
+	position: relative
+	margin: 0 0 40px 0
+.b-search__input
+	display: block
+	border-radius: 100px
+	border: solid 1px #86d5ff
+	width: 100%
+	height: 100%
+	background-color: #41a9e0
+	padding: 0 45px 0 20px
+	font: italic 13px/46px $fontSans
+	color: #fff 
+	+trans(box-shadow, 0.3s, ease)
+	&:hover
+		box-shadow: 0 0 4px 0 #71ceff
+	&:focus
+		font: bold 13px/46px $fontSans
+		color: $fontColor
+		background-color: #FFF
+		box-shadow: 0 0 4px 0 #71ceff
+	.b-search__toggle
+		color: #2f96cc	
+.b-search__toggle
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	border: none
+	outline: none
+	width: 43px
+	height: 100%
+	background-color: transparent
+	color: #86d5ff
+	text-align: center
+/*------------archive nav---------------*/
+.b-archive-nav
+	min-height: 455px
+	padding: 40px 0 0 0
+	display: none
+	position: absolute
+	top: 83px
+	left: 0
+	right: 0
+	background-color: #2f96cc
+	z-index: 9998
+	.b-list-category
+		-webkit-column-count: 11 /* Chrome, Safari, Opera */
+		-moz-column-count: 11 /* Firefox */
+		column-count: 11 
+		-moz-column-width: 67px /* Firefox */
+		-webkit-column-width: 67px /* Safari and Chrome */
+		column-width: 67px
+		-webkit-column-gap: 33px /* Chrome, Safari, Opera */
+		-moz-column-gap: 33px /* Firefox */
+		column-gap: 33px
+		ul[class^="category"]
+			li
+				&:first-child
+					margin-bottom: 10px
+/*------------search nav---------------*/
+.b-search-nav
+	min-height: 455px
+	padding: 40px 0 0 0
+	display: none
+	position: absolute
+	top: 83px
+	left: 0
+	right: 0
+	background-color: #fff
+	z-index: 9998
+	border-radius: 0 0 4px 4px
+	box-shadow: 0 0 4px 0 rgba(34, 35, 36, 0.2)
+	.b-sidebar-search
+		.paragr-bold
+			margin-bottom: 20px
+		li
+			display: block
+			float: none
+			padding: 0
+		a
+			padding: 5px 0 !important
+			font-weight: normal !important
+	.b-sidebar-search__item--tags
+		margin-top: 35px	
+		.paragr-bold
+			margin-bottom: 0
+.b-search-nav__search-big
+	margin-bottom: 37px
+/*----------search nav post-mini-------*/
+.b-search-result
+	overflow: hidden
+	position: relative
+.b-search-result__list
+	height: 260px
+	width: 100%	
+.b-search-result__header
+	margin-bottom: 20px	
+.b-search-result__item
+	width: calc(50% - 40px)
+	height: 68px
+	overflow: hidden
+	margin-right: 40px
+	float: left
+	margin-bottom: 20px		
+.b-post--mini
+	position: relative
+	overflow: hidden
+	.b-post__img
+		width: 68px
+		height: 68px
+		+border-radius(4px)
+		background-color: #d8d8d8
+		float: left
+		position: relative
+		margin-right: 10px
+		cursor: pointer
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+		&:after
+			content: ""
+			width: 29px
+			height: 29px
+			position: absolute
+			bottom: 100% 
+			left: 0
+			right: 0
+			margin: 0 auto
+			background: url(../../img/sprite.png) 0 0 transparent no-repeat
+			+trans
+		&:before
+			content: ""
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			+trans
+		&:hover:after
+			bottom: 19px
+		&:hover:before
+			background-color: rgba(45, 53, 72, 0.8)
+	.b-post__meta
+		text-transform: none
+		.paragr-italic
+			color: #a6b8c9
+			font: italic 13px/14px $fontSans
+		.b-link
+			font: 13px/14px $fontSans
+			font-weight: normal
+			padding: 0
+	.b-post__title
+		.paragr-bold
+			font: bold 14px/18px $fontArvo
+			text-transform: none
+			+trans
+			&:hover
+				color: #fe5a27
+/*-----------search-big----------------*/
+.b-search-big
+	width: 450px
+	height: 42px
+	margin: 0 auto
+	border-radius: 100px
+	border: 0 solid transparent
+	position: relative
+	+trans(box-shadow, 0.3s, ease)
+	&:hover
+		box-shadow: 0 0 4px 0 rgba(46, 150, 204, 0.3)
+.b-search-big__input
+	display: block
+	border-radius: 100px
+	border: solid 1px #d4e3eb
+	outline: none
+	width: 100%
+	height: 100%
+	background-color: #fff
+	padding: 0 45px 0 20px
+	font: italic 13px/42px $fontSans
+	color: #a6b7c7
+	&::-webkit-input-placeholder
+		color: #a6b7c7
+	&::-moz-placeholder
+		color: #a6b7c7
+	&::-ms-placeholder
+		color: #a6b7c7	
+	&:focus
+		font: bold 13px/42px $fontSans
+		color: $fontColor
+		box-shadow: 0 0 4px 0 rgba(46, 150, 204, 0.3)
+.b-search-big__toggle
+	color: #fff
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	width: 137px
+	height: 100%
+	text-align: center
+	border: none
+	outline: none
+	border-radius: 100px
+	background-color: #2f96cc
+	font-weight: bold
+	text-transform: uppercase
+	font: bold 13px/18px $fontSans
+/*----------custom scroll-bar----------*/
+div[customscrollbar]
+	.scroll-bar .thumb
+		width: 6px
+		+border-radius(4px)
+		background-color: #a6b8c9 !important
+		&:hover
+			background-color: #cfdeed !important
+		&[unselectable]
+			background-color: #7a96b0 !important
+/*----------b-twitter------------------*/
+.b-twitter
+.b-twitt
+	overflow: hidden
+	position: relative
+	img
+		width: 100%
+		height: auto
+.b-twitter--home
+	margin: 67px 0 0
+.b-twitter__header
+	margin-bottom: 37px
+	text-align: center
+	.fa-twitter
+		color: #c6e7f7
+		font-size: 36px
+		padding: 0 18px 0 15px
+		vertical-align: -4px	
+.b-twitter__user
+	font-size: 22px
+	color: #2f96cc
+/*-------------b-post------------------*/
+.b-post
+	width: 100%
+	border-radius: 4px
+	background-color: #ffffff
+	box-shadow: 0 0 4px 0 #dde2e4
+	position: relative
+	margin-bottom: 40px
+	&:hover
+		box-shadow: 0 0 15px 0 #d6dde0
+	.b-post__img
+		background-color: #d8d8d8
+		width: 100%
+		height: 200px
+		position: relative
+		overflow: hidden
+		+border-radius(4px 4px 0 0)
+		img
+			width: 100%
+			height: 100%
+			display: block
+		&:after
+			content: ""
+			width: 29px
+			height: 29px
+			position: absolute
+			bottom: 100% 
+			left: 0
+			right: 0
+			margin: 0 auto
+			background: url(../../img/sprite.png) 0 0 transparent no-repeat
+			+trans
+		&:before
+			content: ""
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			+trans
+		&:hover:after
+			bottom: 40%
+		&:hover:before
+			background-color: rgba(45, 53, 72, 0.8)
+	.b-post__wrapper
+		width: 100%
+		padding: 30px 39px 25px
+		overflow: hidden
+	.b-post__title
+		margin-bottom: 18px
+		.paragr-bold
+			font: bold 16px/24px $fontArvo
+			color: $fontColor
+			+trans
+			&:hover
+				color: #fe5a27
+	.b-post__meta-title
+		display: none
+		margin-bottom: 19px
+		.paragr-italic
+			font: italic 13px/18px $fontSans
+			color: #b1b7bb
+		.b-link
+			font: 13px/18px $fontSans
+		.point:after
+			content: '\2022'
+			display: inline-block
+			line-height: 18px
+			padding: 0 8px		
+	.b-post__descr-text
+		font-size: 13px
+		line-height: 1.7
+		color: #262626
+		letter-spacing: -0.5px
+		margin-bottom: 35px
+		.b-link
+			font-size: 13px
+			line-height: 1.7
+			color: #262626
+		.b-link--end
+			font-size: 13px
+			color: #fe5a27 !important	
+	.b-post__link
+		float: left
+		.b-link
+			font-size: 13px
+			color: #fe5a27 !important
+	.b-post__date
+		float: left
+		font-family: $fontSans
+		font-size: 13px
+		color: #acc0cb
+	.b-post__meta-info
+		float: right
+		line-height: 18px
+		font-size: 13px
+		color: #a6b8c9
+	.b-meta-info__view
+		padding-right: 10px
+/*------------recentArticles-----------*/
+.b-recentArticles
+	margin-top: 60px
+.b-recentArticles__header
+	text-align: center
+	font-family: $fontSans
+	font-size: 24px
+	line-height: 33px
+	color: #34373b
+	margin-bottom: 20px
+.b-recentArticles__title
+	margin: 0 auto 40px
+	text-align: center
+	width: 169px
+	height: 35px
+	border-radius: 100px
+	background-color: #f7f9fb
+	border: solid 1px #acc0cb
+	font-family: $fontSans
+	font-weight: bold
+	font-size: 13px
+	line-height: 34px
+	color: #acc0cb
+	position: relative
+	i
+		display: block
+		position: absolute
+		top: -5px
+		right: 0
+		left: 0
+		margin: 0 auto
+	&:after
+		content: ""
+		width: 1px
+		height: 45px
+		background-color: #acc0cb
+		position: absolute
+		right: 0
+		left: 0
+		margin: 0 auto
+		top: 100%		
+.b-recentArticles--left
+	padding-right: 40px
+	padding-bottom: 100px
+	padding-top: 40px
+	border-right: solid 1px #acc0cb
+	margin-right: -19px
+	position: relative
+	&:after
+		content: ""
+		width: 11px
+		height: 11px
+		background-color: #acc0cb
+		position: absolute
+		bottom: 0
+		right: -6px
+		+border-radius(50%)
+.b-recentArticles--right
+	margin-left: 20px
+	margin-top: 150px	
+.b-recentArticles__more
+	margin-top: 20px
+	margin-bottom: 67px
+	.b-btn
+		margin: 0 auto
+.b-post--recent
+	margin-bottom: 0
+	.b-post__img
+		+border-radius(4px 0 0 4px)
+		background-color: #d8d8d8
+		width: 50%
+		height: 245px
+		float: left
+		position: relative	
+	.b-post__wrapper
+		width: 50%
+		height: 245px
+		float: left
+		padding: 30px 40px 0
+		overflow: hidden
+	.b-post__meta-title
+		display: block !important
+	.b-post__descr-text
+		font-size: 13px
+		line-height: 1.7
+		color: #262626
+		letter-spacing: -0.2px
+		margin-bottom: 25px
+		height: 66px
+		overflow: hidden
+		.b-link
+			font-size: 13px
+			line-height: 1.7
+			color: #262626
+	.b-post__link
+		float: left
+		.b-link
+			font-size: 13px
+			color: #fe5a27 !important
+.b-recentArticles--left .b-post--big,
+.b-recentArticles--right .b-post--big
+	&:after
+		content: ""
+		width: 30px
+		height: 30px
+		background: url(../../img/square.png) 0px 0px #f7f9fb
+		+border-radius(50%)
+		position: absolute
+	&:before
+		content: ""
+		width: 42px
+		height: 1px
+		background-color: #acc0cb
+		position: absolute
+.b-recentArticles--left .b-post--big
+	&:after
+		top: 71px
+		right: -56px
+	&:before
+		top: 85px
+		right: -27px
+.b-recentArticles--right .b-post--big
+	&:after
+		top: 71px
+		left: -56px
+	&:before
+		top: 85px
+		left: -28px
+.b-post--big
+	.b-post__img
+		height: 168px
+		+border-radius(4px 4px 0 0)	
+	.b-post__wrapper
+		padding: 29px 39px 36px	
+	.b-post__meta-title
+		display: block !important		
+/*------------popularArticles------*/
+.b-popularArticles__title
+	line-height: 33px
+	font-family: $fontSans
+	font-size: 24px
+	color: $fontColor
+	text-align: center
+	margin-bottom: 33px
+/*------------b-footer-------------*/
+.b-footer
+	padding-top: 39px
+	margin-bottom: 0
+	min-height: 192px
+	background-color: #516273
+	.b-btn
+		float: left
+		margin-left: 120px
+	.b-brand-link--footer
+		float: left
+		color: #c2d3e4
+		display: block
+		font-weight: bold
+		text-transform: uppercase
+		font-family: $fontSans
+		font-size: 24px
+		line-height: 28px
+		&:hover
+			color: #fff
+		&:active
+			color: #fe5a27
+	.b-social-link
+		margin-left: 130px		
+	.b-nav-link--footer
+		float: left
+		margin-left: 40px
+		.b-nav-link__item
+			float: none
+			padding: 0 0 7px 0 !important
+			a
+				color: #c2d3e4
+				display: block
+				&:hover
+					color: #fff
+					text-decoration: underline
+				&:active
+					color: #fe5a27
+					text-decoration: underline
+.b-footer-link
+	float: left
+	margin-left: 40px
+	.b-footer-link__item 
+		padding-bottom: 7px
+		a
+			color: #516273
+			font-family: $fontSans
+			font-weight: bold
+			font-size: 13px
+			line-height: 18px
+			color: #c2d3e4
+			&:hover
+				color: #fff
+				text-decoration: underline
+			&:active
+				color: #fe5a27
+				text-decoration: underline
+.b-copyright
+	float: right
+	text-align: right
+	font-family: $fontSans
+	font-size: 13px
+	color: #c2d3e4
+	line-height: 18px
+.b-copyright__comName
+	text-transform: uppercase
+/*-----------social links----------*/
+.b-social-link
+	float: left
+	.b-social-link__item
+		float: left
+		margin-right: 8px
+		line-height: 33px
+		font-family: $fontSans
+		font-size: 13px
+		color: $fontColor
+		&:last-child
+			margin-right: 0
+		a
+			width: 33px
+			height: 33px
+			font-size: 16px
+			+border-radius(50%)
+			background-color: #76899b
+			color: #fff
+			line-height: 33px
+			text-align: center
+			+trans
+			&:hover
+				background-color: #a6b7c7
+			&:active
+				background-color: #FFF
+				color: #2f96cc	
+/*-------------search_result-------*/
+.b-nav-hor
+	.paragr-bold
+		font: bold 16px/18px $fontSans
+		margin-bottom: 30px
+		text-transform: uppercase
+.b-title
+	line-height: 33px
+	font-family: $fontSans
+	font-weight: normal
+	font-size: 24px
+	color: $fontColor
+.b-searchResult__title
+	margin: 50px 0
+	margin-right: 15px
+	display: inline-block
+.b-searchResult_query
+	width: 428px
+	height: 56px
+	border-radius: 100px
+	background-color: #ffffff
+	border: solid 1px #d4e3eb
+	display: inline-block
+	padding: 0 27px
+	font-family: $fontSans
+	font-size: 24px
+	font-weight: bold
+	line-height: 54px
+	color: $fontColor
+.b-searchResult__wrapper
+	border-bottom: 1px solid #e8ebee
+	border-top: 1px solid #e8ebee
+	padding: 36px 0
+	overflow: hidden
+.b-searchResult__list-header
+	margin: 23px 0 22px
+	.paragr-bold
+		font: bold 16px/46px $fontSans
+		text-transform: uppercase
+		float: left
+/*-----------nav-hor-------------*/
+.b-nav-hor
+	float: left
+	margin-right: 130px
+	li a
+		display: block
+		font: 15px/1.3 $fontSans
+		padding: 0 !important
+		transition: all 0.3s ease
+/*-----------nav-vert------------*/
+.b-nav-vt
+	margin: 14px 0 41px 32px 
+	.b-nav-vt__item
+		float: none
+		text-align: left
+		padding: 0 !important
+		a
+			color: #fff
+			font-family: $fontSans
+			font-size: 13px
+			line-height: 32px
+			color: #ffffff	
+/*----------dropdown-------------*/
+.b-dropdown
+	float: right
+	position: relative
+	&.open
+		.b-btn
+			background-color: #ffffff
+			box-shadow: 0 0 4px 0 rgba(46, 150, 204, 0.3)
+			border: solid 1px #d4e3eb
+	.b-btn
+		width: 197px
+		height: 46px
+		padding: 0 21px
+		border-radius: 100px
+		background-color: #ffffff
+		border: solid 1px #d9dee2
+		font-family: $fontSans
+		line-height: 46px
+		font-size: 13px
+		color: $fontColor !important
+		text-transform: capitalize
+		text-align: left
+		span
+			position: absolute
+			top: 20px
+			right: 21px
+	.dropdown-menu
+		width: 197px	
+		border-radius: 4px
+		background-color: #ffffff
+		border: solid 1px #d4e3eb
+		margin: 5px 0 0
+		padding: 0
+		.dropdown-menu__item
+			a
+				padding: 14px 0 14px 20.5px  
+				line-height: 18px
+				font-family: $fontSans
+				font-weight: bold
+				font-size: 13px
+				color: $fontColor
+				&:hover
+					color: #2f96cc
+			border-bottom: solid 1px #d4e3eb	
+			&:last-child
+				border: none	
+/*-------search_tag_result-------*/
+.b-searchResult--tags
+	.b-searchResult__list-header
+		margin: 30px 0 31px
+	.b-searchResult_query
+		background-color: transparent
+		border: none
+		padding: 0
+		height: 32px
+		line-height: 32px
+	.b-searchResult__title.b-title
+		margin: 0
+/*-------article-----------------*/
+.b-article__wrapper--mn
+	margin-top: -53px
+.b-post--article
+	width: 100%
+	+border-radius(4px)
+	background-color: #fff
+	box-shadow: none
+	position: relative
+	margin-bottom: 0
+	&:hover
+		box-shadow: none
+	.b-post__img
+		display: none
+	.b-post__wrapper
+		width: 100%
+		padding: 24px 40px 0
+		overflow: hidden
+	.b-post__title
+		margin-bottom: 18px
+		.h1
+	.b-post__meta-title
+		display: block
+		margin-bottom: 19px
+		overflow: hidden
+		.paragr-italic
+			font: italic 13px/18px $fontSans
+			color: #b1b7bb
+		.b-link
+			font: 13px/18px $fontSans
+			padding-right: 3px
+		.point:after
+			content: '\2022'
+			display: inline-block
+			line-height: 18px
+			padding: 0 8px		
+	.b-post__descr-text
+		margin-bottom: 35px
+		.h3
+			margin-bottom: 35px
+	.b-text
+		color: #262626
+		margin-bottom: 35px
+		letter-spacing: 0 !important
+		white-space: normal
+		.b-link
+			font-size: 16px
+			line-height: 1.9
+			color: #262626
+	.b-text--normal
+		font-size: 16px
+		line-height: 1.9
+	.b-text--bq
+		font-style: italic
+		text-align: center
+		font-family: $fontSans
+		font-size: 20px
+		line-height: 1.8
+		background-color: #fff
+		border: solid 10px #f7f9fb
+		padding: 30px 33px
+		.b-link
+			font: italic 20px/1.8 $fontSans !important
+			display: inline !important
+	.b-list
+		list-style: disc outside none !important
+		font-family: $fontSans
+		font-size: 16px
+		line-height: 1.9
+		margin: 0 0 35px 30px
+	.b-post__link
+		float: left
+		.b-link
+			font-size: 13px
+			color: #fe5a27 !important
+	.b-post__date
+		float: left
+		padding-top: 2px
+	.b-date	
+		font-family: $fontSans
+		font-size: 13px
+		color: #acc0cb
+		line-height: 18px
+		display: inline-block
+	.b-post__meta-info
+		float: right
+	.b-meta-info
+		line-height: 18px
+		font-size: 13px
+		color: #a6b8c9
+	.b-meta-info__view
+		padding-right: 10px
+.b-post--metatitle
+	margin: 10px 0 25px
+	.b-social-link
+		a
+			background-color: #d4e3eb
+			+trans
+			&:hover
+				background-color: #a6b7c7
+			&:active
+				background-color: #FFF
+				color: #2f96cc
+.b-pagination--article
+	.b-pagination__wrapper
+		display: block
+	.b-pagination__item
+		.paragr-bold
+			font: bold 12px/16px $fontArvo
+	.b-pagination__item--prev
+		float: left
+		margin: 0
+		width: 200px
+		text-align: left
+		a
+			text-align: left
+			text-transform: capitalize
+			line-height: 20px
+			font-weight: normal
+			padding-bottom: 6px
+			display: inline-block
+	.b-pagination__item--next
+		float: right
+		margin: 0
+		width: 200px
+		text-align: right
+		a
+			text-align: right
+			text-transform: capitalize
+			line-height: 20px
+			font-weight: normal
+			padding-bottom: 6px
+			display: inline-block
+/*-------b-meta-title-----------*/
+.b-meta-title
+.b-meta-title--lh
+	line-height: 33px
+/*---------b-book---------------*/
+.b-book
+	min-height: 477px
+	border: solid 10px #fff
+	margin-bottom: 40px
+.b-book__img
+	text-align: center
+	vertical-align: middle
+	//margin-top: 50px
+	img
+		width: 100%
+		height: auto
+.b-book__title
+	font-family: $fontSans
+	font-size: 32px
+	line-height: 1
+	color: #41a9e0	
+	font-weight: bold
+	text-transform: uppercase
+	margin-bottom: 7px
+.b-book__descr
+	font-family: $fontSans
+	font-size: 16px
+	line-height: 1.3
+	font-weight: bold
+	color: $fontColor
+	text-align: center
+	margin-bottom: 46px	
+.b-book__wrapper
+	width: 260px
+	padding-top: 20px
+
+.b-book--modal
+	margin: 163px auto 0
+	width: 780px
+	height: 477px
+	border-radius: 4px
+	background-color: #ffffff
+	box-shadow: 0 0 15px 0 #2f3643
+	padding-right: 0 !important
+	overflow: auto !important
+	&.modal
+		overflow: visible !important
+	.b-book__img
+		margin-top: 0
+	.b-form__input:nth-of-type(3)
+		margin-bottom: 50px
+	.b-input
+		border-color: #d5dadf
+		&:hover
+			background-color: #ffffff
+			border: solid 1px #d5dadf
+		&:focus
+			border: solid 1px #d5dadf
+	.b-form__input,
+	.b-form__button
+		/*display: none*/
+		display: block
+	.b-form__success
+		display: none
+		.b-btn
+			margin: 0 auto
+	.b-success
+		color: #262626
+		letter-spacing: 0 !important
+		white-space: normal
+		font-size: 16px
+		line-height: 1.9
+		font-weight: normal
+		text-align: center
+		padding-top: 54px
+		margin: 35px 0 88px
+		position: relative
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+			width: 38px
+			height: 38px
+			background: url(../../img/sprite.png) 0 -29px no-repeat transparent
+.b-book--ovf
+	overflow: hidden
+.modal-backdrop
+	background-color: rgba(45, 53, 72, 0.8)
+.modal-backdrop.in
+	opacity: 1
+/*---------b-form---------------*/
+.b-form__input
+	width: 100%
+	margin-bottom: 20px
+	&:nth-of-type(3)
+		margin-bottom: 50px
+/*---------b-input--------------*/
+.b-input
+	display: block
+	border: none
+	outline: none
+	border-bottom: solid 1px #d4e3eb
+	width: 100%
+	height: 46px
+	background-color: transparent
+	padding: 0 45px 0 20px
+	font: italic 13px/46px $fontSans
+	color: #a6b7c7
+	object-fit: contain
+	+trans(all, 0.5s, ease)
+	&::-webkit-input-placeholder
+		color: #a6b7c7
+	&::-moz-placeholder
+		color: #a6b7c7
+	&::-ms-placeholder
+		color: #a6b7c7
+	&:hover
+		border-radius: 100px
+		background-color: #ffffff
+		border: solid 1px #d4e3eb
+	&:focus
+		font: bold 13px/46px $fontSans
+		color: $fontColor
+		background-color: #FFF
+		box-shadow: 0 0 4px 0 rgba(46, 150, 204, 0.3)
+		border-radius: 100px
+		border: solid 1px #d4e3eb
+/*--------b-comments-------------*/
+.b-comments
+	margin-bottom: 81px
+.b-comments__img 
+	img
+		width: 100%
+		height: auto	
+/*--------b-sidebar--------------*/
+.b-sidebar
+	.b-post--mini
+		padding: 10px 0
+		border-bottom: 1px solid #e8ebee
+		&:first-child
+			border-top: 1px solid #e8ebee
+.b-sidebar__title
+	margin: 27px 0 23px
+/*--------b-map------------------*/
+.b-map
+	height: 320px	
+

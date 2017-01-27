@@ -1,0 +1,271 @@
+doctype html
+<!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html lang="ru" class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+html
+	<!--[if lte IE 8]
+	<script src="lib/html5shiv/respond.min.js"></script>
+	<![endif]-->
+	head
+		title Search_result
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge; text/html;")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="shortcut icon", href="favicon.png")
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,400italic,600italic,700,700italic|Arvo:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+		//link(rel="stylesheet", href="lib/font-awesome/css/font-awesome.min.css")
+		link(rel="stylesheet", href="lib/bootstrap/css/bootstrap.min.css")
+		link(rel="stylesheet", href="lib/animation/animate.css")
+		link(rel="stylesheet", href="lib/custom_scrollbar/jquery.custom-scrollbar.css")
+		//link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/reset.css")
+		//link(rel="stylesheet", href="fonts/fonts.css")
+		link(rel="stylesheet", href="css/css/main.css")
+		link(rel="stylesheet", href="css/media.css")
+	body
+		.b-main-wrapper
+			.b-header
+				include blocks/header.jade
+			section.b-searchResult
+					.container
+						.row
+							.col-sm-12.cols-md-12
+								.b-searchResult__title.b-title Search result: 
+								input(type="text" placeholder="Happiness").b-searchResult_query
+								.b-searchResult__wrapper
+									.b-nav-hor.b-nav-hor--category
+										h4.paragr-bold category <span>(2)</span>
+										ul
+											li.b-nav-hor__item
+												a(href="#").b-link Change Management
+											li.b-nav-hor__item
+												a(href="#").b-link Communication & Relations
+									.b-nav-hor.b-nav-hor--tags
+										h4.paragr-bold tags <span>(6)</span>
+										ul
+											li.b-nav-hor__item
+												a(href="#").b-link Change Management
+											li.b-nav-hor__item
+												a(href="#").b-link Communication & Relations
+											li.b-nav-hor__item
+												a(href="#").b-link Change Management
+											li.b-nav-hor__item
+												a(href="#").b-link Compensation
+											li.b-nav-hor__item
+												a(href="#").b-link Competence Development
+											li.b-nav-hor__item
+												a(href="#").b-link Complexity Thinking
+											li.b-nav-hor__item
+												a(href="#").b-link Complex Systems	
+								.row
+									.b-searchResult__list
+										.col-sm-12
+											.b-searchResult__list-header.clearfix
+												h4.paragr-bold articles <span>(4)</span>
+												.b-dropdown
+													button(class="b-btn b-btn--normal" type="button" data-toggle="dropdown") Popularity <span class="caret"></span></button>
+													ul.dropdown-menu
+														li.dropdown-menu__item
+															a(href="#") Popularity
+														li.dropdown-menu__item
+															a(href="#") Time
+										.col-md-6.col-lg-4
+											.b-post
+												a(href="#").b-post__img
+													img(src="img/post_img_recent_4.png", alt="recent_img")
+												.b-post__wrapper
+													a(href="#").b-post__title
+														h4.paragr-bold My Book Tour in North America 
+													.b-post__meta-title.
+														<span class="paragr-italic point">
+															Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+														</span>
+														<span class="paragr-italic posted-tags">tags
+															<a href="#" class="b-link">books</a>,
+															<a href="#" class="b-link">happiness</a>
+														</span>
+													p.b-post__descr-text.
+														This year in June, publisher John Wiley & Sons will release 
+														<a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful 
+														#Workout book. To celebrate this, I have a special offer for event ... 
+														<a href="#" class="b-link b-link--end">Read more</a>
+													.b-post__date
+														<i class="fa fa-clock-o"></i> 29 December 2015
+													.b-post__meta-info
+														.b-meta-info
+															span.b-meta-info__view
+																<i class="fa fa-eye"></i> 1446
+															span.b-meta-info__reply
+																<i class="fa fa-reply"></i> 146		
+										.col-md-6.col-lg-4
+											.b-post
+												a(href="#").b-post__img
+													img(src="img/post_img_recent_3.png", alt="recent_img")
+												.b-post__wrapper
+													a(href="#").b-post__title
+														h4.paragr-bold My Book Tour in North America 
+													.b-post__meta-title.
+														<span class="paragr-italic point">
+															Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+														</span>
+														<span class="paragr-italic posted-tags">tags
+															<a href="#" class="b-link">books</a>,
+															<a href="#" class="b-link">happiness</a>
+														</span>
+													p.b-post__descr-text.
+														This year in June, publisher John Wiley & Sons will release 
+														<a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful 
+														#Workout book. To celebrate this, I have a special offer for event ... 
+														<a href="#" class="b-link b-link--end">Read more</a>
+													.b-post__date
+														<i class="fa fa-clock-o"></i> 29 December 2015
+													.b-post__meta-info
+														.b-meta-info
+															span.b-meta-info__view
+																<i class="fa fa-eye"></i> 1446
+															span.b-meta-info__reply
+																<i class="fa fa-reply"></i> 146		
+										.col-md-6.col-lg-4
+											.b-post
+												a(href="#").b-post__img
+													img(src="img/post_img_recent_2.png", alt="recent_img")
+												.b-post__wrapper
+													a(href="#").b-post__title
+														h4.paragr-bold My Book Tour in North America 
+													.b-post__meta-title.
+														<span class="paragr-italic point">
+															Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+														</span>
+														<span class="paragr-italic posted-tags">tags
+															<a href="#" class="b-link">books</a>,
+															<a href="#" class="b-link">happiness</a>
+														</span>
+													p.b-post__descr-text.
+														This year in June, publisher John Wiley & Sons will release 
+														<a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful 
+														#Workout book. To celebrate this, I have a special offer for event ... 
+														<a href="#" class="b-link b-link--end">Read more</a>
+													.b-post__date
+														<i class="fa fa-clock-o"></i> 29 December 2015
+													.b-post__meta-info
+														.b-meta-info
+															span.b-meta-info__view
+																<i class="fa fa-eye"></i> 1446
+															span.b-meta-info__reply
+																<i class="fa fa-reply"></i> 146		
+										.col-md-6.col-lg-4
+											.b-post
+												a(href="#").b-post__img
+													img(src="img/post_img_recent_2.png", alt="recent_img")
+												.b-post__wrapper
+													a(href="#").b-post__title
+														h4.paragr-bold My Book Tour in North America 
+													.b-post__meta-title.
+														<span class="paragr-italic point">
+															Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+														</span>
+														<span class="paragr-italic posted-tags">tags
+															<a href="#" class="b-link">books</a>,
+															<a href="#" class="b-link">happiness</a>
+														</span>
+													p.b-post__descr-text.
+														This year in June, publisher John Wiley & Sons will release 
+														<a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful 
+														#Workout book. To celebrate this, I have a special offer for event ... 
+														<a href="#" class="b-link b-link--end">Read more</a>
+													.b-post__date
+														<i class="fa fa-clock-o"></i> 29 December 2015
+													.b-post__meta-info
+														.b-meta-info
+															span.b-meta-info__view
+																<i class="fa fa-eye"></i> 1446
+															span.b-meta-info__reply
+																<i class="fa fa-reply"></i> 146		
+										.col-md-6.col-lg-4
+											.b-post
+												a(href="#").b-post__img
+													img(src="img/post_img_recent_4.png", alt="recent_img")
+												.b-post__wrapper
+													a(href="#").b-post__title
+														h4.paragr-bold My Book Tour in North America 
+													.b-post__meta-title.
+														<span class="paragr-italic point">
+															Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+														</span>
+														<span class="paragr-italic posted-tags">tags
+															<a href="#" class="b-link">books</a>,
+															<a href="#" class="b-link">happiness</a>
+														</span>
+													p.b-post__descr-text.
+														This year in June, publisher John Wiley & Sons will release 
+														<a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful 
+														#Workout book. To celebrate this, I have a special offer for event ... 
+														<a href="#" class="b-link b-link--end">Read more</a>
+													.b-post__date
+														<i class="fa fa-clock-o"></i> 29 December 2015
+													.b-post__meta-info
+														.b-meta-info
+															span.b-meta-info__view
+																<i class="fa fa-eye"></i> 1446
+															span.b-meta-info__reply
+																<i class="fa fa-reply"></i> 146		
+										.col-md-6.col-lg-4
+											.b-post
+												a(href="#").b-post__img
+													img(src="img/post_img_recent_1.png", alt="recent_img")
+												.b-post__wrapper
+													a(href="#").b-post__title
+														h4.paragr-bold My Book Tour in North America 
+													.b-post__meta-title.
+														<span class="paragr-italic point">
+															Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+														</span>
+														<span class="paragr-italic posted-tags">tags
+															<a href="#" class="b-link">books</a>,
+															<a href="#" class="b-link">happiness</a>
+														</span>
+													p.b-post__descr-text.
+														This year in June, publisher John Wiley & Sons will release 
+														<a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful 
+														#Workout book. To celebrate this, I have a special offer for event ... 
+														<a href="#" class="b-link b-link--end">Read more</a>
+													.b-post__date
+														<i class="fa fa-clock-o"></i> 29 December 2015
+													.b-post__meta-info
+														.b-meta-info
+															span.b-meta-info__view
+																<i class="fa fa-eye"></i> 1446
+															span.b-meta-info__reply
+																<i class="fa fa-reply"></i> 146								
+										.col-xs-12
+											include blocks/pagination.jade	
+		include blocks/footer.jade
+		include blocks/popup.jade
+									
+
+
+		
+				
+		<!--[if lt IE 9]>	
+		script(src="lib/html5shiv/es5-shim.min.js")
+		script(src="lib/html5shiv/html5shiv.min.js")
+		script(src="lib/html5shiv/html5shiv-printshiv.min.js")
+		script(src="lib/respond.min.js")
+		<![endif]-->
+		script(src="lib/jquery/jquery-2.1.4.min.js")
+		script(src="lib/custom_scrollbar/jquery.custom-scrollbar.js")
+		script(src="lib/bootstrap/js/bootstrap.min.js")
+		script(src="js/init.js")
+		
+		//Yandex.Metrika counter
+		//Yandex.Metrika counter
+		//Google Analytics counter
+		//Google Analytics counter		

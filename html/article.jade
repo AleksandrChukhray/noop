@@ -1,0 +1,213 @@
+doctype html
+<!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html lang="ru" class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+html
+	<!--[if lte IE 8]
+	<script src="lib/html5shiv/respond.min.js"></script>
+	<![endif]-->
+	head
+		title Article
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge; text/html;")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="shortcut icon", href="favicon.png")
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,400italic,600italic,700,700italic|Arvo:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+		//link(rel="stylesheet", href="lib/font-awesome/css/font-awesome.min.css")
+		link(rel="stylesheet", href="lib/bootstrap/css/bootstrap.min.css")
+		link(rel="stylesheet", href="lib/animation/animate.css")
+		link(rel="stylesheet", href="lib/custom_scrollbar/jquery.custom-scrollbar.css")
+		//link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/reset.css")
+		//link(rel="stylesheet", href="fonts/fonts.css")
+		link(rel="stylesheet", href="css/css/main.css")
+		link(rel="stylesheet", href="css/media.css")
+	body
+		.b-main-wrapper
+			.b-header
+				include blocks/header.jade
+			section.b-topImg.b-topImg--article
+			section.b-article
+				.container
+					.row
+						.col-sm-8.col-md-8
+							.b-article__wrapper.b-article__wrapper--mn
+								.b-post.b-post--article
+									.b-post__wrapper
+										.b-post__title
+											h1.h1 My Book Tour in North America 
+										.b-post__meta-title
+											.b-meta-title.
+												<div class="b-date point">
+													<i class="fa fa-clock-o"></i> 29 December 2015
+												</div>
+												<span class="paragr-italic point">
+													Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+												</span>
+												<span class="paragr-italic posted-tags">Tags
+													<a href="#" class="b-link">books,</a>
+													<a href="#" class="b-link">happiness</a>
+												</span>
+										.b-post__descr-text
+											p.b-text.b-text--normal.
+												This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers 
+												<br>in the USA and Canada.
+											p.b-text.b-text--normal.
+												For an appearance at any event (either public or in-company) during my book tour, <b>I offer 100 copies of my new book for free</b>, and for anything above that number, <b>I offer a 50% discount</b> from the catalog price (USD 35). This only applies to events taking place during my book tour in North America
+												<br>from June 30 to August 31.	
+											blockquote.b-text.b-text--normal.b-text--bq.
+												“ This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizersin<br> the USA and Canada. “
+											p.b-text.b-text--normal.
+												This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers
+												<br>in the USA and Canada.
+											<h3 class="h3">Repeatable Methodology</h3>	
+											p.b-text.b-text--normal.
+												For an appearance at any event (either public or in-company) during my book tour, <b>I offer 100 copies of my new book for free</b>, and for anything above that number, <b>I offer a 50% discount</b> from the catalog price (USD 35). This only applies to events taking place during my book tour in North America 
+												<br>from June 30 to August 31.	
+									.b-map#b-map
+									.b-post__wrapper
+										.b-post__descr-text
+											p.b-text.b-text--normal
+												|This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers 
+												|<br>in the USA and Canada.
+												ul.b-list
+													li irreducible simplicity
+													li immediate intuition
+													li beauty underneath
+													li approachable innovation
+													li form and color agreement
+													li replicable methodology
+											p.b-text.b-text--normal.
+												This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers 
+												<br>in the USA and Canada.	
+							.b-article__wrapper.b-article__wrapper--bgc
+								.b-post.b-post--article.b-post--metatitle
+									.b-post__wrapper
+										.b-post__meta-title
+											.b-meta-title.b-meta-title--lh.pull-left.
+												<span class="paragr-italic point">
+													Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+												</span>
+												<span class="paragr-italic posted-tags">Tags
+													<a href="#" class="b-link">books,</a>
+													<a href="#" class="b-link">happiness</a>
+												</span>		
+											ul.b-social-link.pull-right
+												li.b-social-link__item Share with
+												li.b-social-link__item.b-social-link__item--twitter
+													a(href="#" ) <i class="fa fa-twitter"></i>
+												li.b-social-link__item.b-social-link__item--facebook
+													a(href="#" ) <i class="fa fa-facebook"></i> 
+												li.b-social-link__item.b-social-link__item--google
+													a(href="#" ) <i class="fa fa-google-plus"></i>
+												li.b-social-link__item.b-social-link__item--linked
+													a(href="#" ) <i class="fa fa-linkedin"></i>
+								.b-pagination.b-pagination--article
+									ul.b-pagination__wrapper
+										li.b-pagination__item.b-pagination__item--prev
+											a(href="#") <i class="fa fa-chevron-left"></i> previous
+											.paragr-bold My Book Tour in North America
+										li.b-pagination__item.b-pagination__item--next
+											a(href="#")  next <i class="fa fa-chevron-right"></i>
+											.paragr-bold My Book Tour in North America						
+						.col-sm-4.col-md-4
+							.b-article__wrapper.b-article__wrapper--bgc
+								.b-sidebar
+									.b-sidebar__title.b-title Related Posts
+									.b-sidebar__wrapper
+										.b-post--mini
+											a(href="#").b-post__img
+												img(src="img/search_img_1.png", alt="img_search")
+											a(href="#").b-post__title
+												h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+											.b-post__meta.
+												<span class="paragr-italic">Posted in</span>
+												<a href="#" class="b-link">Managing for Happiness</a>
+										.b-post--mini
+											a(href="#").b-post__img
+												img(src="img/search_img_1.png", alt="img_search")
+											a(href="#").b-post__title
+												h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+											.b-post__meta.
+												<span class="paragr-italic">Posted in</span>
+												<a href="#" class="b-link">Managing for Happiness</a>
+										.b-post--mini
+											a(href="#").b-post__img
+												img(src="img/search_img_1.png", alt="img_search")
+											a(href="#").b-post__title
+												h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+											.b-post__meta.
+												<span class="paragr-italic">Posted in</span>
+												<a href="#" class="b-link">Managing for Happiness</a>
+										.b-post--mini
+											a(href="#").b-post__img
+												img(src="img/search_img_1.png", alt="img_search")
+											a(href="#").b-post__title
+												h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+											.b-post__meta.
+												<span class="paragr-italic">Posted in</span>
+												<a href="#" class="b-link">Managing for Happiness</a>						
+										.b-post--mini
+											a(href="#").b-post__img
+												img(src="img/search_img_1.png", alt="img_search")
+											a(href="#").b-post__title
+												h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+											.b-post__meta.
+												<span class="paragr-italic">Posted in</span>
+												<a href="#" class="b-link">Managing for Happiness</a>		
+					.row
+						.col-sm-8.col-md-8
+							.b-book.b-book--ovf
+								.row
+									.col-sm-6.col-md-6
+										.b-book__img
+											img(src="img/image-book.png", alt="free book")
+									.col-sm-6.col-md-6
+										.b-book__wrapper
+											.b-book__title GET FREE BOOK!
+											.b-book__descr “Managing for Happiness”
+											.b-book__form
+												form(action="index.php").b-form
+													label(for="").b-form__input
+														input(type="text" placeholder="First name").b-input
+													label(for="").b-form__input
+														input(type="text" placeholder="Email").b-input
+													label(for="").b-form__input
+														input(type="text" placeholder="Country").b-input
+													label(for="").b-form__button
+														button(type="submit").b-btn.b-btn--lg.b-btn--red Get free book!			
+							.b-comments
+								.row
+									.col-xs-12
+										.b-comments__img
+											img(src="img/comment_img_0.png", alt="")							
+		include blocks/footer.jade
+		include blocks/popup.jade
+
+
+		
+				
+		<!--[if lt IE 9]>	
+		script(src="lib/html5shiv/es5-shim.min.js")
+		script(src="lib/html5shiv/html5shiv.min.js")
+		script(src="lib/html5shiv/html5shiv-printshiv.min.js")
+		script(src="lib/respond.min.js")
+		<![endif]-->
+		script(src="lib/jquery/jquery-2.1.4.min.js")
+		script(src="lib/custom_scrollbar/jquery.custom-scrollbar.js")
+		script(src="lib/bootstrap/js/bootstrap.min.js")
+		script(src="js/init.js")
+		script(src="https://maps.googleapis.com/maps/api/js?callback=initMap" defer)
+		
+		//Yandex.Metrika counter
+		//Yandex.Metrika counter
+		//Google Analytics counter
+		//Google Analytics counter		

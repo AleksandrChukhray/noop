@@ -1,0 +1,816 @@
+<!DOCTYPE html><!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html lang="ru" class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+  <!--[if lte IE 8]
+  <script src="lib/html5shiv/respond.min.js"></script>
+  <![endif]-->
+  <head>
+    <title>Article</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; text/html;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,400italic,600italic,700,700italic|Arvo:400,700,400italic,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--link(rel="stylesheet", href="lib/font-awesome/css/font-awesome.min.css")-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/animation/animate.css">
+    <link rel="stylesheet" href="lib/custom_scrollbar/jquery.custom-scrollbar.css">
+    <!--link(rel="stylesheet", href="css/normalize.css")-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--link(rel="stylesheet", href="fonts/fonts.css")-->
+    <link rel="stylesheet" href="css/css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <div class="b-main-wrapper">
+      <div class="b-header">
+        <div class="b-header__nav">
+          <div class="b-nav">
+            <div class="b-nav__toggle navbar-header">
+              <button type="button" class="b-toggle visible-xs navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="../" class="b-brand-link visible-xs">noop.ln</a>
+            </div>
+            <nav class="b-nav__nav-link">
+              <button type="button" class="b-toggle clearfix visible-xs navbar-toggle"></button>
+              <div class="b-nav-link b-nav-link--top">
+                <div class="container">
+                  <ul class="pull-left hidden-xs">
+                    <li class="active"><a href="#">Speaking</a></li>
+                    <li><a href="#">Writing</a></li>
+                    <li><a href="#">Managing</a></li>
+                    <li><a href="#">About</a></li>
+                  </ul>
+                  <ul class="pull-right b-social-link--header hidden-xs">
+                    <li class="b-social-link__item b-social-link__item--twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                    <li class="b-social-link__item b-social-link__item--facebook"><a href="#"><i class="fa fa-facebook-square"></i> </a></li>
+                    <li class="b-social-link__item b-social-link__item--google"><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                    <li class="b-social-link__item b-social-link__item--linked"><a href="#"><i class="fa fa-linkedin-square"></i>			</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="b-nav-link b-nav-link--bottom">
+                <div class="container"><a href="../" class="visible-md visible-lg pull-left b-brand-link">Noop.nl</a>
+                  <form action="" method="post" class="b-search visible-xs">
+                    <button type="submint" class="b-search__toggle"><i class="fa fa-search"></i></button>
+                    <input type="search" placeholder="Search" class="b-search__input">
+                  </form>
+                  <ul class="pull-right b-nav-vt--category">
+                    <li class="b-nav-link__item"><a href="#b-caregory-nav" class="b-open">CATEGORY</a>
+                      <div opened="off" id="b-caregory-nav" class="b-caregory-nav b-navpopup">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12 col-sm-12"><a href="#b-caregory-nav" class="b-close hidden-xs">close<i class="fa fa-times"></i></a>
+                              <div class="b-category-nav__search">
+                                <form action="" method="post" class="b-search hidden-xs">
+                                  <button type="submint" class="b-search__toggle"><i class="fa fa-search"></i></button>
+                                  <input type="search" placeholder="Find category" class="b-search__input">
+                                </form>
+                              </div>
+                              <div class="b-caregory-nav__list-category">
+                                <div class="b-list-category">
+                                  <ul class="category--a">
+                                    <li><a href="#">A</a></li>
+                                    <li><a href="#">Adaptation & Improvement</a></li>
+                                    <li><a href="#">Agile & Len</a></li>
+                                    <li><a href="#">Agile Development		</a></li>
+                                  </ul>
+                                  <ul class="category--b">
+                                    <li><a href="#">B</a></li>
+                                    <li><a href="#">Best Books</a></li>
+                                    <li><a href="#">Blog & Book</a></li>
+                                    <li><a href="#">Book List</a></li>
+                                    <li><a href="#">Book Review</a></li>
+                                  </ul>
+                                  <ul class="category--c">
+                                    <li><a href="#">C</a></li>
+                                    <li class="active"><a href="#">Change Management</a></li>
+                                    <li><a href="#">Communication & Relations</a></li>
+                                    <li><a href="#">Compensation</a></li>
+                                    <li><a href="#">Competence Development</a></li>
+                                    <li><a href="#">Complexity Thinking</a></li>
+                                    <li><a href="#">Complex Systems</a></li>
+                                  </ul>
+                                  <ul class="category--d">
+                                    <li><a href="#">D</a></li>
+                                    <li><a href="#">Don’t Read This</a></li>
+                                    <li><a href="#">Drawing</a></li>
+                                  </ul>
+                                  <ul class="category--e">
+                                    <li><a href="#">E</a></li>
+                                    <li><a href="#">Empowerment & Delegation</a></li>
+                                    <li><a href="#">Events & Conferences</a></li>
+                                  </ul>
+                                  <ul class="category--f">
+                                    <li><a href="#">F</a></li>
+                                    <li><a href="#">Feedback & Evaluation</a></li>
+                                  </ul>
+                                  <ul class="category--g">
+                                    <li><a href="#">G</a></li>
+                                    <li><a href="#">Growth & Control</a></li>
+                                  </ul>
+                                  <ul class="category--h">
+                                    <li><a href="#">H</a></li>
+                                    <li><a href="#">Happiness</a></li>
+                                    <li><a href="#">Happiness</a></li>
+                                    <li><a href="#">Happiness		</a></li>
+                                  </ul>
+                                  <ul class="category--i">
+                                    <li><a href="#">I</a></li>
+                                    <li><a href="#">Identity & Purpose</a></li>
+                                    <li><a href="#">Individual Improvement</a></li>
+                                    <li><a href="#">Interview</a></li>
+                                  </ul>
+                                  <ul class="category--k">
+                                    <li><a href="#">K</a></li>
+                                    <li><a href="#">Knowledge & Experience</a></li>
+                                  </ul>
+                                  <ul class="category--l">
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">Lean Thinking</a></li>
+                                    <li><a href="#">Life & Work</a></li>
+                                  </ul>
+                                  <ul class="category--m">
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">Management & Leadership</a></li>
+                                    <li><a href="#">Management 3.0</a></li>
+                                    <li><a href="#">Management Events</a></li>
+                                    <li><a href="#">Methods & Practices</a></li>
+                                    <li><a href="#">Mindfulness</a></li>
+                                    <li><a href="#">My Articles</a></li>
+                                    <li><a href="#">My Presentations</a></li>
+                                    <li><a href="#">My Work</a></li>
+                                    <li><a href="#">My Workshops</a></li>
+                                  </ul>
+                                  <ul class="category--p">
+                                    <li><a href="#">P</a></li>
+                                    <li><a href="#">People & Motivation</a></li>
+                                    <li><a href="#">Practices & Discipline</a></li>
+                                    <li><a href="#">Progress & Performance</a></li>
+                                    <li><a href="#">Project Performance</a></li>
+                                    <li><a href="#">Promotion</a></li>
+                                  </ul>
+                                  <ul class="category--q">
+                                    <li><a href="#">Q</a></li>
+                                    <li><a href="#">Quality Improvement</a></li>
+                                  </ul>
+                                  <ul class="category--r">
+                                    <li><a href="#">R</a></li>
+                                    <li><a href="#">Remote Working</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                    <li><a href="#">Risk & Uncertainty</a></li>
+                                    <li><a href="#">Roving Coffee		</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="b-pagination--top hidden-xs">
+                                <ul class="b-pagination__wrapper">
+                                  <li class="b-pagination__item b-pagination__item--prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                  <li class="b-pagination__item"><a href="#">a</a></li>
+                                  <li class="b-pagination__item"><a href="#">b</a></li>
+                                  <li class="b-pagination__item"><a href="#">	c</a></li>
+                                  <li class="b-pagination__item"><a href="#">d</a></li>
+                                  <li class="b-pagination__item"><a href="#">e</a></li>
+                                  <li class="b-pagination__item active"><a href="#">	f	</a></li>
+                                  <li class="b-pagination__item"><a href="#">g</a></li>
+                                  <li class="b-pagination__item"><a href="#">h</a></li>
+                                  <li class="b-pagination__item"><a href="#">	i	</a></li>
+                                  <li class="b-pagination__item"><a href="#">j</a></li>
+                                  <li class="b-pagination__item"><a href="#">k</a></li>
+                                  <li class="b-pagination__item"><a href="#">	l</a></li>
+                                  <li class="b-pagination__item"><a href="#">m</a></li>
+                                  <li class="b-pagination__item"><a href="#">n</a></li>
+                                  <li class="b-pagination__item"><a href="#">	o</a></li>
+                                  <li class="b-pagination__item"><a href="#">p</a></li>
+                                  <li class="b-pagination__item"><a href="#">q</a></li>
+                                  <li class="b-pagination__item"><a href="#">	r	</a></li>
+                                  <li class="b-pagination__item"><a href="#">s</a></li>
+                                  <li class="b-pagination__item"><a href="#">t</a></li>
+                                  <li class="b-pagination__item"><a href="#">	u</a></li>
+                                  <li class="b-pagination__item"><a href="#">v</a></li>
+                                  <li class="b-pagination__item"><a href="#">w</a></li>
+                                  <li class="b-pagination__item"><a href="#">	x</a></li>
+                                  <li class="b-pagination__item"><a href="#">y</a></li>
+                                  <li class="b-pagination__item"><a href="#">z</a></li>
+                                  <li class="b-pagination__item b-pagination__item--next"><a href="#">	<i class="fa fa-angle-right"></i>												</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="b-nav-link__item"><a href="#">TAG</a></li>
+                    <li class="b-nav-link__item"><a href="#b-archive-nav" class="b-open">ARCHIVE</a>
+                      <div opened="off" id="b-archive-nav" class="b-archive-nav b-navpopup">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12 col-sm-12"><a href="#b-archive-nav" class="b-close hidden-xs">close<i class="fa fa-times"></i></a>
+                              <div class="b-category-nav__search hidden-xs">
+                                <form action="" method="post" class="b-search">
+                                  <button type="submint" class="b-search__toggle"><i class="fa fa-search"></i></button>
+                                  <input type="search" placeholder="Find category" class="b-search__input">
+                                </form>
+                              </div>
+                              <div class="b-caregory-nav__list-category">
+                                <div class="b-list-category">
+                                  <ul class="category--2008">
+                                    <li><a href="#">2008</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December				</a></li>
+                                  </ul>
+                                  <ul class="category--2009">
+                                    <li><a href="#">2009</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December</a></li>
+                                  </ul>
+                                  <ul class="category--2010">
+                                    <li><a href="#">2010</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December</a></li>
+                                  </ul>
+                                  <ul class="category--2011">
+                                    <li><a href="#">2011</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December</a></li>
+                                  </ul>
+                                  <ul class="category--2012">
+                                    <li><a href="#">2012</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December</a></li>
+                                  </ul>
+                                  <ul class="category--2013">
+                                    <li><a href="#">2013</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December</a></li>
+                                  </ul>
+                                  <ul class="category--2014">
+                                    <li><a href="#">2014</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December</a></li>
+                                  </ul>
+                                  <ul class="category--2015 visible-lg">
+                                    <li><a href="#">2015</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><a href="#">April</a></li>
+                                    <li><a href="#">May</a></li>
+                                    <li><a href="#">June</a></li>
+                                    <li><a href="#">July</a></li>
+                                    <li><a href="#">August</a></li>
+                                    <li><a href="#">September</a></li>
+                                    <li><a href="#">October</a></li>
+                                    <li><a href="#">November</a></li>
+                                    <li><a href="#">December		</a></li>
+                                  </ul>
+                                  <ul class="category--2016 visible-lg">
+                                    <li><a href="#">2016</a></li>
+                                    <li><a href="#">January</a></li>
+                                    <li><a href="#">February</a></li>
+                                    <li><a href="#">March</a></li>
+                                    <li><span>April</span></li>
+                                    <li><span>May</span></li>
+                                    <li><span>June</span></li>
+                                    <li><span>July</span></li>
+                                    <li><span>August</span></li>
+                                    <li><span>September</span></li>
+                                    <li><span>October</span></li>
+                                    <li><span>November</span></li>
+                                    <li><span>December</span></li>
+                                  </ul>
+                                  <ul class="category--2017 visible-lg">
+                                    <li><span>2017</span></li>
+                                    <li><span>January</span></li>
+                                    <li><span>February</span></li>
+                                    <li><span>March</span></li>
+                                    <li><span>April</span></li>
+                                    <li><span>May</span></li>
+                                    <li><span>June</span></li>
+                                    <li><span>July</span></li>
+                                    <li><span>August</span></li>
+                                    <li><span>September</span></li>
+                                    <li><span>October</span></li>
+                                    <li><span>November</span></li>
+                                    <li><span>December</span></li>
+                                  </ul>
+                                  <ul class="category--2018 visible-lg">
+                                    <li><span>2018</span></li>
+                                    <li><span>January</span></li>
+                                    <li><span>February</span></li>
+                                    <li><span>March</span></li>
+                                    <li><span>April</span></li>
+                                    <li><span>May</span></li>
+                                    <li><span>June</span></li>
+                                    <li><span>July</span></li>
+                                    <li><span>August</span></li>
+                                    <li><span>September</span></li>
+                                    <li><span>October</span></li>
+                                    <li><span>November</span></li>
+                                    <li><span>December</span></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="b-pagination--top hidden-xs">
+                                <ul class="b-pagination__wrapper">
+                                  <li class="b-pagination__item b-pagination__item--prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                  <li class="b-pagination__item"><a href="#">2008</a></li>
+                                  <li class="b-pagination__item"><a href="#">2009</a></li>
+                                  <li class="b-pagination__item"><a href="#">	2010</a></li>
+                                  <li class="b-pagination__item"><a href="#">2011</a></li>
+                                  <li class="b-pagination__item"><a href="#">2012</a></li>
+                                  <li class="b-pagination__item active"><a href="#">	2013	</a></li>
+                                  <li class="b-pagination__item"><a href="#">2014</a></li>
+                                  <li class="b-pagination__item"><a href="#">2015</a></li>
+                                  <li class="b-pagination__item"><a href="#">	2016	</a></li>
+                                  <li class="b-pagination__item"><a href="#">2017</a></li>
+                                  <li class="b-pagination__item"><a href="#">2018</a></li>
+                                  <li class="b-pagination__item b-pagination__item--next"><a href="#">	<i class="fa fa-angle-right"></i>												</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="b-nav-link__item hidden-xs"><a href="#b-search-nav" class="b-open"><i class="fa fa-search"></i></a>
+                      <div opened="off" id="b-search-nav" class="b-search-nav b-navpopup">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12 col-sm-12"><a href="#b-search-nav" class="b-close b-close--search-nav">close<i class="fa fa-times"></i></a>
+                              <div class="b-search-nav__search-big">
+                                <form action="" method="post" class="b-search-big">
+                                  <button type="submint" class="b-search-big__toggle"><i class="fa fa-search"></i> Search</button>
+                                  <input type="search" placeholder="Find category" class="b-search-big__input">
+                                </form>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-3 col-sm-3">
+                                  <div class="b-sidebar-search">
+                                    <div class="b-sidebar-search__item">
+                                      <h4 class="paragr-bold">category</h4>
+                                      <ul>
+                                        <li><a href="#">Happiness</a></li>
+                                        <li><a href="#">Managing for Happiness</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="b-sidebar-search__item b-sidebar-search__item--tags">
+                                      <h4 class="paragr-bold">tags</h4>
+                                      <ul>
+                                        <li><a href="#">Happiness</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-9 col-sm-9">
+                                  <div class="b-search-nav__search-result">
+                                    <div class="b-search-result b-search-result--scrollbar">
+                                      <h4 class="paragr-bold b-search-result__header">articles</h4>
+                                      <div customscrollbar class="b-search-result__list">
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_0.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_0.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_2.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_2.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>										</div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_2.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_2.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>													</div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_2.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                        <div class="b-search-result__item">
+                                          <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_2.png" alt="img_search"></a><a href="#" class="b-post__title">
+                                              <h4 class="paragr-bold">My Book Tour in North America </h4></a>
+                                            <div class="b-post__meta"><span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="b-nav-link__item b-nav-link__item--btn"><a href="#" data-toggle="modal" data-target="#free-book-popup" class="b-btn b-btn--small b-btn--red">FREEBOOK!</a></li>
+                  </ul>
+                  <ul class="b-nav-vt visible-xs">
+                    <li class="b-nav-vt__item"><a href="#">Speaking</a></li>
+                    <li class="b-nav-vt__item"><a href="#">Writing</a></li>
+                    <li class="b-nav-vt__item"><a href="#">Managing</a></li>
+                    <li class="b-nav-vt__item"><a href="#">About</a></li>
+                  </ul><a href="#" data-toggle="modal" data-target="#free-book-popup" class="visible-xs b-btn b-btn--normal b-btn--red">FREEBOOK!</a>
+                  <ul class="pull-right b-social-link--header visible-xs">
+                    <li class="b-social-link__item b-social-link__item--twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                    <li class="b-social-link__item b-social-link__item--facebook"><a href="#"><i class="fa fa-facebook-square"></i> </a></li>
+                    <li class="b-social-link__item b-social-link__item--google"><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+                    <li class="b-social-link__item b-social-link__item--linked"><a href="#"><i class="fa fa-linkedin-square"></i>				</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <section class="b-topImg b-topImg--article"></section>
+      <section class="b-article">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-8">
+              <div class="b-article__wrapper b-article__wrapper--mn">
+                <div class="b-post b-post--article">
+                  <div class="b-post__wrapper">
+                    <div class="b-post__title">
+                      <h1 class="h1">My Book Tour in North America </h1>
+                    </div>
+                    <div class="b-post__meta-title">
+                      <div class="b-meta-title">
+                        <div class="b-date point">
+                        	<i class="fa fa-clock-o"></i> 29 December 2015
+                        </div>
+                        <span class="paragr-italic point">
+                        	Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+                        </span>
+                        <span class="paragr-italic posted-tags">Tags
+                        	<a href="#" class="b-link">books,</a>
+                        	<a href="#" class="b-link">happiness</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="b-post__descr-text">
+                      <p class="b-text b-text--normal">
+                        This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers 
+                        <br>in the USA and Canada.
+                      </p>
+                      <p class="b-text b-text--normal">
+                        For an appearance at any event (either public or in-company) during my book tour, <b>I offer 100 copies of my new book for free</b>, and for anything above that number, <b>I offer a 50% discount</b> from the catalog price (USD 35). This only applies to events taking place during my book tour in North America
+                        <br>from June 30 to August 31.	
+                      </p>
+                      <blockquote class="b-text b-text--normal b-text--bq">“ This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizersin<br> the USA and Canada. “</blockquote>
+                      <p class="b-text b-text--normal">
+                        This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers
+                        <br>in the USA and Canada.
+                      </p><h3 class="h3">Repeatable Methodology</h3>	
+                      <p class="b-text b-text--normal">
+                        For an appearance at any event (either public or in-company) during my book tour, <b>I offer 100 copies of my new book for free</b>, and for anything above that number, <b>I offer a 50% discount</b> from the catalog price (USD 35). This only applies to events taking place during my book tour in North America 
+                        <br>from June 30 to August 31.	
+                      </p>
+                    </div>
+                  </div>
+                  <div id="b-map" class="b-map"></div>
+                  <div class="b-post__wrapper">
+                    <div class="b-post__descr-text">
+                      <p class="b-text b-text--normal">
+                        This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers 
+                        <br>in the USA and Canada.
+                        <ul class="b-list">
+                          <li>irreducible simplicity</li>
+                          <li>immediate intuition</li>
+                          <li>beauty underneath</li>
+                          <li>approachable innovation</li>
+                          <li>form and color agreement</li>
+                          <li>replicable methodology</li>
+                        </ul>
+                      </p>
+                      <p class="b-text b-text--normal">
+                        This year in June, publisher John Wiley & Sons will release <a href="#" class="b-link">Managing for Happiness</a>, the updated version of my very successful #Workout book. To celebrate this, I have a special offer for event organizers 
+                        <br>in the USA and Canada.	
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-article__wrapper b-article__wrapper--bgc">
+                <div class="b-post b-post--article b-post--metatitle">
+                  <div class="b-post__wrapper">
+                    <div class="b-post__meta-title">
+                      <div class="b-meta-title b-meta-title--lh pull-left">
+                        <span class="paragr-italic point">
+                        	Posted in <a href="#" class="b-link"> Managing for Happiness</a>
+                        </span>
+                        <span class="paragr-italic posted-tags">Tags
+                        	<a href="#" class="b-link">books,</a>
+                        	<a href="#" class="b-link">happiness</a>
+                        </span>		
+                      </div>
+                      <ul class="b-social-link pull-right">
+                        <li class="b-social-link__item">Share with</li>
+                        <li class="b-social-link__item b-social-link__item--twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="b-social-link__item b-social-link__item--facebook"><a href="#"><i class="fa fa-facebook"></i> </a></li>
+                        <li class="b-social-link__item b-social-link__item--google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="b-social-link__item b-social-link__item--linked"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-pagination b-pagination--article">
+                  <ul class="b-pagination__wrapper">
+                    <li class="b-pagination__item b-pagination__item--prev"><a href="#"><i class="fa fa-chevron-left"></i> previous</a>
+                      <div class="paragr-bold">My Book Tour in North America</div>
+                    </li>
+                    <li class="b-pagination__item b-pagination__item--next"><a href="#"> next <i class="fa fa-chevron-right"></i></a>
+                      <div class="paragr-bold">My Book Tour in North America						</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="b-article__wrapper b-article__wrapper--bgc">
+                <div class="b-sidebar">
+                  <div class="b-sidebar__title b-title">Related Posts</div>
+                  <div class="b-sidebar__wrapper">
+                    <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                        <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                      <div class="b-post__meta">
+                        <span class="paragr-italic">Posted in</span>
+                        <a href="#" class="b-link">Managing for Happiness</a>
+                      </div>
+                    </div>
+                    <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                        <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                      <div class="b-post__meta">
+                        <span class="paragr-italic">Posted in</span>
+                        <a href="#" class="b-link">Managing for Happiness</a>
+                      </div>
+                    </div>
+                    <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                        <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                      <div class="b-post__meta">
+                        <span class="paragr-italic">Posted in</span>
+                        <a href="#" class="b-link">Managing for Happiness</a>
+                      </div>
+                    </div>
+                    <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                        <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                      <div class="b-post__meta">
+                        <span class="paragr-italic">Posted in</span>
+                        <a href="#" class="b-link">Managing for Happiness</a>						
+                      </div>
+                    </div>
+                    <div class="b-post--mini"><a href="#" class="b-post__img"><img src="img/search_img_1.png" alt="img_search"></a><a href="#" class="b-post__title">
+                        <h4 class="paragr-bold">Puzzling with an itinerary that should get me through Rio de Janeiro</h4></a>
+                      <div class="b-post__meta">
+                        <span class="paragr-italic">Posted in</span>
+                        <a href="#" class="b-link">Managing for Happiness</a>		
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-md-8">
+              <div class="b-book b-book--ovf">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <div class="b-book__img"><img src="img/image-book.png" alt="free book"></div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="b-book__wrapper">
+                      <div class="b-book__title">GET FREE BOOK!</div>
+                      <div class="b-book__descr">“Managing for Happiness”</div>
+                      <div class="b-book__form">
+                        <form action="index.php" class="b-form">
+                          <label for="" class="b-form__input">
+                            <input type="text" placeholder="First name" class="b-input">
+                          </label>
+                          <label for="" class="b-form__input">
+                            <input type="text" placeholder="Email" class="b-input">
+                          </label>
+                          <label for="" class="b-form__input">
+                            <input type="text" placeholder="Country" class="b-input">
+                          </label>
+                          <label for="" class="b-form__button">
+                            <button type="submit" class="b-btn b-btn--lg b-btn--red">Get free book!			</button>
+                          </label>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-comments">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="b-comments__img"><img src="img/comment_img_0.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="b-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12"><a href="#" class="visible-xs visible-md visible-lg pull-left b-brand-link b-brand-link--footer b-footer__item">Noop.nl</a><a href="#" data-toggle="modal" data-target="#free-book-popup" class="b-btn b-btn--normal b-btn--red visible-xs b-footer__item">free book!</a>
+            <ul class="b-footer-link b-footer__item">
+              <li class="b-footer-link__item"><a href="#">Category</a></li>
+              <li class="b-footer-link__item"><a href="#">Tags</a></li>
+              <li class="b-footer-link__item"><a href="#">Archive</a></li>
+            </ul>
+            <div class="b-nav-link b-nav-link--footer b-footer__item">
+              <ul>
+                <li class="b-nav-link__item"><a href="#">Writing</a></li>
+                <li class="b-nav-link__item"><a href="#">Speaking</a></li>
+                <li class="b-nav-link__item"><a href="#">Managing</a></li>
+                <li class="b-nav-link__item"><a href="#">Training</a></li>
+                <li class="b-nav-link__item"><a href="#">About				</a></li>
+              </ul>
+            </div><a href="#" data-toggle="modal" data-target="#free-book-popup" class="b-btn b-btn--normal b-btn--red hidden-xs b-footer__item">free book!</a>
+            <ul class="b-social-link b-footer__item">
+              <li class="b-social-link__item b-social-link__item--twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="b-social-link__item b-social-link__item--facebook"><a href="#"><i class="fa fa-facebook"></i> </a></li>
+              <li class="b-social-link__item b-social-link__item--google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="b-social-link__item b-social-link__item--linked"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <div class="b-copyright b-footer__item">Copyright © 2015. <br><span class="b-copyright__comName">NOOP.NL</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div tabindex="-1" role="dialog" id="free-book-popup" class="b-book b-book--modal modal fade"><button type="button" class="close b-close b-close--book" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">close</span><i class="fa fa-times"></i></button>
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <div class="b-book__img"><img src="img/image-book.png" alt="free book"></div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <div class="b-book__wrapper">
+            <div class="b-book__title">GET FREE BOOK!</div>
+            <div class="b-book__descr">“Managing for Happiness”</div>
+            <div class="b-book__form">
+              <form action="index.php" class="b-form">
+                <label for="" class="b-form__input">
+                  <input type="text" placeholder="First name" class="b-input">
+                </label>
+                <label for="" class="b-form__input">
+                  <input type="text" placeholder="Email" class="b-input">
+                </label>
+                <label for="" class="b-form__input">
+                  <input type="text" placeholder="Country" class="b-input">
+                </label>
+                <label for="" class="b-form__button">
+                  <button type="submit" class="b-btn b-btn--lg b-btn--red">Get free book!</button>
+                </label>
+                <label for="" class="b-form__success">
+                  <div class="b-success">Your e-book was successfully sent to your e-mail</div>
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close b-btn b-btn--normal b-btn--blue"><span aria-hidden="true">close</span></button>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--[if lt IE 9]>	
+    <script src="lib/html5shiv/es5-shim.min.js"></script>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="lib/respond.min.js"></script><![endif]-->
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="lib/custom_scrollbar/jquery.custom-scrollbar.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" defer></script>
+    <!--Yandex.Metrika counter-->
+    <!--Yandex.Metrika counter-->
+    <!--Google Analytics counter-->
+    <!--Google Analytics counter		-->
+  </body>
+</html>

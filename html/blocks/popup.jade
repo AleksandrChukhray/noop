@@ -1,0 +1,23 @@
+.b-book.b-book--modal(class="modal fade" tabindex="-1" role="dialog" id="free-book-popup" )
+	<button type="button" class="close b-close b-close--book" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">close</span><i class="fa fa-times"></i></button>
+	.row
+		.col-sm-6.col-md-6
+			.b-book__img
+				img(src="img/image-book.png", alt="free book")
+		.col-sm-6.col-md-6
+			.b-book__wrapper
+				.b-book__title GET FREE BOOK!
+				.b-book__descr “Managing for Happiness”
+				.b-book__form
+					form(action="index.php").b-form
+						label(for="").b-form__input
+							input(type="text" placeholder="First name").b-input
+						label(for="").b-form__input
+							input(type="text" placeholder="Email").b-input
+						label(for="").b-form__input
+							input(type="text" placeholder="Country").b-input
+						label(for="").b-form__button
+							button(type="submit").b-btn.b-btn--lg.b-btn--red Get free book!
+						label(for="").b-form__success
+							.b-success Your e-book was successfully sent to your e-mail
+							button(type="button" class="close b-btn b-btn--normal b-btn--blue" data-dismiss="modal" aria-label="Close")<span aria-hidden="true">close</span>

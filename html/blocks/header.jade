@@ -1,0 +1,723 @@
+.b-header__nav
+	.b-nav
+		.b-nav__toggle.navbar-header
+			button(type="button" class="b-toggle visible-xs navbar-toggle")
+				span(class="icon-bar")
+				span(class="icon-bar")
+				span(class="icon-bar")
+			a(href="../" class="b-brand-link visible-xs") noop.ln
+		nav.b-nav__nav-link
+			button(type="button" class="b-toggle clearfix visible-xs navbar-toggle")
+			.b-nav-link.b-nav-link--top
+				.container
+					ul.pull-left.hidden-xs
+						li.active
+							a(href="#") Speaking
+						li
+							a(href="#") Writing
+						li
+							a(href="#") Managing
+						li
+							a(href="#") About
+					ul.pull-right.b-social-link--header.hidden-xs
+						li.b-social-link__item.b-social-link__item--twitter
+							a(href="#" ) <i class="fa fa-twitter-square"></i>
+						li.b-social-link__item.b-social-link__item--facebook
+							a(href="#" ) <i class="fa fa-facebook-square"></i> 
+						li.b-social-link__item.b-social-link__item--google
+							a(href="#" ) <i class="fa fa-google-plus-square"></i>
+						li.b-social-link__item.b-social-link__item--linked
+							a(href="#" ) <i class="fa fa-linkedin-square"></i>			
+			.b-nav-link.b-nav-link--bottom
+				.container
+					a(href="../" class="visible-md visible-lg pull-left b-brand-link") Noop.nl
+					form(action="" method="post").b-search.visible-xs
+						button(type="submint").b-search__toggle <i class="fa fa-search"></i>
+						input(type="search" placeholder="Search").b-search__input
+					ul.pull-right.b-nav-vt--category
+						li.b-nav-link__item
+							a(href="#b-caregory-nav").b-open CATEGORY
+							.b-caregory-nav.b-navpopup(opened="off")#b-caregory-nav
+								.container
+									.row
+										.col-md-12.col-sm-12
+											a(href="#b-caregory-nav").b-close.hidden-xs close<i class="fa fa-times"></i>
+											.b-category-nav__search
+												form(action="" method="post").b-search.hidden-xs
+													button(type="submint").b-search__toggle <i class="fa fa-search"></i>
+													input(type="search" placeholder="Find category").b-search__input
+											.b-caregory-nav__list-category(customscrollbar)
+												.b-list-category
+													ul.category--a
+														li
+															a(href="#") A
+														li
+															a(href="#") Adaptation & Improvement
+														li
+															a(href="#") Agile & Len
+														li
+															a(href="#") Agile Development		
+													ul.category--b
+														li
+															a(href="#") B
+														li
+															a(href="#") Best Books
+														li
+															a(href="#") Blog & Book
+														li
+															a(href="#") Book List
+														li
+															a(href="#") Book Review
+													ul.category--c
+														li
+															a(href="#") C
+														li.active
+															a(href="#") Change Management
+														li
+															a(href="#") Communication & Relations
+														li
+															a(href="#") Compensation
+														li
+															a(href="#") Competence Development
+														li
+															a(href="#") Complexity Thinking
+														li
+															a(href="#") Complex Systems
+													ul.category--d
+														li
+															a(href="#") D
+														li
+															a(href="#") Don’t Read This
+														li
+															a(href="#") Drawing
+													ul.category--e
+														li
+															a(href="#") E
+														li
+															a(href="#") Empowerment & Delegation
+														li
+															a(href="#") Events & Conferences
+													ul.category--f
+														li
+															a(href="#") F
+														li
+															a(href="#") Feedback & Evaluation
+													ul.category--g
+														li
+															a(href="#") G
+														li
+															a(href="#") Growth & Control
+													ul.category--h
+														li
+															a(href="#") H
+														li
+															a(href="#") Happiness
+														li
+															a(href="#") Happiness
+														li
+															a(href="#") Happiness		
+													ul.category--i
+														li
+															a(href="#") I
+														li
+															a(href="#") Identity & Purpose
+														li
+															a(href="#") Individual Improvement
+														li
+															a(href="#") Interview
+													ul.category--k
+														li
+															a(href="#") K
+														li
+															a(href="#") Knowledge & Experience
+													ul.category--l
+														li
+															a(href="#") L
+														li
+															a(href="#") Lean Thinking
+														li
+															a(href="#") Life & Work
+													ul.category--m
+														li
+															a(href="#") M
+														li
+															a(href="#") Management & Leadership
+														li
+															a(href="#") Management 3.0
+														li
+															a(href="#") Management Events
+														li
+															a(href="#") Methods & Practices
+														li
+															a(href="#") Mindfulness
+														li
+															a(href="#") My Articles
+														li
+															a(href="#") My Presentations
+														li
+															a(href="#") My Work
+														li
+															a(href="#") My Workshops
+													ul.category--p
+														li
+															a(href="#") P
+														li
+															a(href="#") People & Motivation
+														li
+															a(href="#") Practices & Discipline
+														li
+															a(href="#") Progress & Performance
+														li
+															a(href="#") Project Performance
+														li
+															a(href="#") Promotion
+													ul.category--q
+														li
+															a(href="#") Q
+														li
+															a(href="#") Quality Improvement
+													ul.category--r
+														li
+															a(href="#") R
+														li
+															a(href="#") Remote Working
+														li
+															a(href="#") Reviews
+														li
+															a(href="#") Risk & Uncertainty
+														li
+															a(href="#") Roving Coffee		
+											.b-pagination--top.hidden-xs
+												ul.b-pagination__wrapper
+													li.b-pagination__item.b-pagination__item--prev
+														a(href="#") <i class="fa fa-angle-left"></i>
+													li.b-pagination__item
+														a(href="#") a
+													li.b-pagination__item
+														a(href="#") b
+													li.b-pagination__item
+														a(href="#")	c
+													li.b-pagination__item
+														a(href="#") d
+													li.b-pagination__item
+														a(href="#") e
+													li.b-pagination__item.active
+														a(href="#")	f	
+													li.b-pagination__item
+														a(href="#") g
+													li.b-pagination__item
+														a(href="#") h
+													li.b-pagination__item
+														a(href="#")	i	
+													li.b-pagination__item
+														a(href="#") j
+													li.b-pagination__item
+														a(href="#") k
+													li.b-pagination__item
+														a(href="#")	l
+													li.b-pagination__item
+														a(href="#") m
+													li.b-pagination__item
+														a(href="#") n
+													li.b-pagination__item
+														a(href="#")	o
+													li.b-pagination__item
+														a(href="#") p
+													li.b-pagination__item
+														a(href="#") q
+													li.b-pagination__item
+														a(href="#")	r	
+													li.b-pagination__item
+														a(href="#") s
+													li.b-pagination__item
+														a(href="#") t
+													li.b-pagination__item
+														a(href="#")	u
+													li.b-pagination__item
+														a(href="#") v
+													li.b-pagination__item
+														a(href="#") w
+													li.b-pagination__item
+														a(href="#")	x
+													li.b-pagination__item
+														a(href="#") y
+													li.b-pagination__item
+														a(href="#") z
+													li.b-pagination__item.b-pagination__item--next
+														a(href="#")	<i class="fa fa-angle-right"></i>												
+						li.b-nav-link__item
+							a(href="#") TAG
+						li.b-nav-link__item
+							a(href="#b-archive-nav").b-open ARCHIVE
+							.b-archive-nav.b-navpopup(opened="off")#b-archive-nav
+								.container
+									.row
+										.col-md-12.col-sm-12
+											a(href="#b-archive-nav").b-close.hidden-xs close<i class="fa fa-times"></i>
+											.b-category-nav__search.hidden-xs
+												form(action="" method="post").b-search
+													button(type="submint").b-search__toggle <i class="fa fa-search"></i>
+													input(type="search" placeholder="Find category").b-search__input
+											.b-caregory-nav__list-category(customscrollbar)
+												.b-list-category
+													ul.category--2008
+														li
+															a(href="#") 2008
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December				
+													ul.category--2009
+														li
+															a(href="#") 2009
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December
+													ul.category--2010
+														li
+															a(href="#") 2010
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December
+													ul.category--2011
+														li
+															a(href="#") 2011
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December
+													ul.category--2012
+														li
+															a(href="#") 2012
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December
+													ul.category--2013
+														li
+															a(href="#") 2013
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December
+													ul.category--2014
+														li
+															a(href="#") 2014
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December
+													ul.category--2015.visible-lg
+														li
+															a(href="#") 2015
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															a(href="#") April
+														li
+															a(href="#") May
+														li
+															a(href="#") June
+														li
+															a(href="#") July
+														li
+															a(href="#") August
+														li
+															a(href="#") September
+														li
+															a(href="#") October
+														li
+															a(href="#") November
+														li
+															a(href="#") December		
+													ul.category--2016.visible-lg
+														li
+															a(href="#") 2016
+														li
+															a(href="#") January
+														li
+															a(href="#") February
+														li
+															a(href="#") March
+														li
+															span April
+														li
+															span May
+														li
+															span June
+														li
+															span July
+														li
+															span August
+														li
+															span September
+														li
+															span October
+														li
+															span November
+														li
+															span December
+													ul.category--2017.visible-lg
+														li
+															span 2017
+														li
+															span January
+														li
+															span February
+														li
+															span March
+														li
+															span April
+														li
+															span May
+														li
+															span June
+														li
+															span July
+														li
+															span August
+														li
+															span September
+														li
+															span October
+														li
+															span November
+														li
+															span December
+													ul.category--2018.visible-lg
+														li
+															span 2018
+														li
+															span January
+														li
+															span February
+														li
+															span March
+														li
+															span April
+														li
+															span May
+														li
+															span June
+														li
+															span July
+														li
+															span August
+														li
+															span September
+														li
+															span October
+														li
+															span November
+														li
+															span December
+											.b-pagination--top.hidden-xs
+												ul.b-pagination__wrapper
+													li.b-pagination__item.b-pagination__item--prev
+														a(href="#") <i class="fa fa-angle-left"></i>
+													li.b-pagination__item
+														a(href="#") 2008
+													li.b-pagination__item
+														a(href="#") 2009
+													li.b-pagination__item
+														a(href="#")	2010
+													li.b-pagination__item
+														a(href="#") 2011
+													li.b-pagination__item
+														a(href="#") 2012
+													li.b-pagination__item.active
+														a(href="#")	2013	
+													li.b-pagination__item
+														a(href="#") 2014
+													li.b-pagination__item
+														a(href="#") 2015
+													li.b-pagination__item
+														a(href="#")	2016	
+													li.b-pagination__item
+														a(href="#") 2017
+													li.b-pagination__item
+														a(href="#") 2018
+													li.b-pagination__item.b-pagination__item--next
+														a(href="#")	<i class="fa fa-angle-right"></i>												
+						li.b-nav-link__item.hidden-xs
+							a(href="#b-search-nav").b-open <i class="fa fa-search"></i>
+							.b-search-nav.b-navpopup(opened="off")#b-search-nav
+								.container
+									.row
+										.col-md-12.col-sm-12
+											a(href="#b-search-nav").b-close.b-close--search-nav close<i class="fa fa-times"></i>
+											.b-search-nav__search-big
+												form(action="" method="post").b-search-big
+													button(type="submint").b-search-big__toggle <i class="fa fa-search"></i> Search
+													input(type="search" placeholder="Find category").b-search-big__input
+											.row
+												.col-md-3.col-sm-3
+													.b-sidebar-search
+														.b-sidebar-search__item
+															h4.paragr-bold category
+															ul
+																li
+																	a(href="#") Happiness
+																li
+																	a(href="#") Managing for Happiness
+														.b-sidebar-search__item.b-sidebar-search__item--tags
+															h4.paragr-bold tags
+															ul
+																li
+																	a(href="#") Happiness
+												.col-md-9.col-sm-9
+													.b-search-nav__search-result
+														.b-search-result.b-search-result--scrollbar
+															h4.paragr-bold.b-search-result__header articles
+															.b-search-result__list(customscrollbar)
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_0.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_0.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_1.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_1.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_2.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_2.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>										
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_1.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_2.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_2.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>													
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_1.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold Puzzling with an itinerary that should get me through Rio de Janeiro
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_2.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+																.b-search-result__item
+																	.b-post--mini
+																		a(href="#").b-post__img
+																			img(src="img/search_img_2.png", alt="img_search")
+																		a(href="#").b-post__title
+																			h4.paragr-bold My Book Tour in North America 
+																		.b-post__meta <span class="paragr-italic">Posted in</span> <a href="#" class="b-link"> Managing for Happiness</a>
+						li.b-nav-link__item.b-nav-link__item--btn
+							a(href="#" data-toggle="modal" data-target="#free-book-popup").b-btn.b-btn--small.b-btn--red FREEBOOK!
+					ul.b-nav-vt.visible-xs
+						li.b-nav-vt__item
+							a(href="#") Speaking
+						li.b-nav-vt__item
+							a(href="#") Writing
+						li.b-nav-vt__item
+							a(href="#") Managing
+						li.b-nav-vt__item
+							a(href="#") About
+					a(href="#" data-toggle="modal" data-target="#free-book-popup").visible-xs.b-btn.b-btn--normal.b-btn--red FREEBOOK!
+					ul.pull-right.b-social-link--header.visible-xs
+						li.b-social-link__item.b-social-link__item--twitter
+							a(href="#" ) <i class="fa fa-twitter-square"></i>
+						li.b-social-link__item.b-social-link__item--facebook
+							a(href="#" ) <i class="fa fa-facebook-square"></i> 
+						li.b-social-link__item.b-social-link__item--google
+							a(href="#" ) <i class="fa fa-google-plus-square"></i>
+						li.b-social-link__item.b-social-link__item--linked
+							a(href="#" ) <i class="fa fa-linkedin-square"></i>				
